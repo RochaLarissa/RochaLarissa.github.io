@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Agendamento de Consultas - Dr Breno Barroso</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Agendamento de Consultas">
+  <meta name="author" content="Larissa Pereira">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="topnav">
+  <img src="logo11.png" alt="logo11" width: 100% style="float:left">
+  <img src="logo.png" alt="logo" width: 100% style="float:right">
+  <a href="index.html">Home</a>
+  <a href="convenio.html">Convênios</a>
+  <a href="Agendamentos.html">Agendamentos</a>
+  <a href="localizacao.html">Localização</a>
+  <a href="contato.html">Contato</a>
+</div>
+
+   <div class ="article">
+    
+    <h1 id="muda">Agendamentos</h1>
+    <fieldset style="width: 40%; margin-left: 30%">
+    <form action="mailto:larissapereirarocha@edu.unifor.br" target="_blank" method="post">
+        <label for="name">Nome completo:</label><br>
+        <input type="text" id="name" name="name" size=60 required><br><br>
+        
+        <label for="telefone">Tefelone:</label><br>
+        <input type="text" id="telefone" name="telefone" size="20" required><br><br>
+        
+            <label for="convenio">Convênio:</label><br>
+            <select id="convenio" name="convenio">
+                <option value="particular">Particular</option>
+                <option value="unimed">Unimed</option>
+                <option value="amil">Amil</option>
+                <option value="hapvida">Hapvida</option>
+                <option value="cafaz">Cafaz</option>
+                <option value="medlife">MedLife</option>
+            </select>
+            
+            <br><br><label for="tipo">Tipo:</label><br>
+            <input type="checkbox" id="consulta" name="tipo" value="consulta">
+            <label for="male">Consulta</label>
+            <input type="checkbox" id="exame" name="tipo" value="exame">
+            <label for="female">Exame</label><br><br>
+           
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data" required><br>
+                 
+            <br>Turno:
+            <input type="radio" id="manha" name="turno" value="manha">
+            <label for="manha">Manhã</label>
+            <input type="radio" id="tarde" name="turno" value="tarde">
+            <label for="tarde">Tarde</label>                                  
+        <br><br>
+        <input type="submit" value="Agendar">
+      </form> 
+    </fieldset>
+  </div>
+  
+
+
+<div class="footer">
+ 
+    <img src="contato.png" alt="contato" width:100%">
+  
+    
+</div>
+
+
+</body>
+</html>
